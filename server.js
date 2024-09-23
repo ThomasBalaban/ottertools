@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static(__dirname + '/dist/ottertools/browser'));
 
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/dist/ottertools/browser/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/ottertools/browser/index.csr.html'));
 });
 
 app.get('/privacy-policy', function(req, res) {
