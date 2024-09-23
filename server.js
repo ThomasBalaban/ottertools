@@ -10,6 +10,10 @@ app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/dist/ottertools/browser/index.csr.html'));
 });
 
+app.get('/tiktokdfrlJMJFr6mAwwSADvBDe3rdGVd1zhr2*', function(req, res) {
+    res.sendFile(path.join(__dirname + '/dist/ottertools/browser/tiktokdfrlJMJFr6mAwwSADvBDe3rdGVd1zhr2.txt'));
+  });
+
 app.get('/privacy-policy', function(req, res) {
     res.sendFile(path.join(__dirname + '/dist/ottertools/browser/privacy-policy/index.html'));
 });
